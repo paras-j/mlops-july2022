@@ -4,14 +4,13 @@
 </p>
 
 
-
 # <h1 align="center" id="heading">:wave: Welcome to MLOps Short Course!</h1>
 
 Welcome to MLOps Short Course! :tada: Follow these steps to get your development environment teed up! After you've finished this set-up, feel free to go through the associated ![Whodunit?](https://github.com/FourthBrain/whodunit)! 🕵️‍♀️
 
 
 ## :books: Quick Review
-We will be using some terminal commands, so let's make sure you know what they are and what they do! 
+We will be using some terminal commands, so let's make sure you know what they are and what they do!
 
 | Command      | Stands For |  Description |
 | ----------- | ----------- | -------------|
@@ -64,7 +63,7 @@ Some commands we will use in this lesson when it comes to `conda` and `pip`:
 
 <p></p>
 
-## :rocket: Let's Get Started! 
+## :rocket: Let's Get Started!
 Let's start off by setting up our environment!  Review the environment setup instructions for the local environment that you'll be using in this course.
 <details>
   <summary>Windows</summary>
@@ -77,10 +76,10 @@ wsl --install -d Ubuntu-20.04
 ```
 * Install [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) (You can even make it your [default!](https://devblogs.microsoft.com/commandline/windows-terminal-as-your-default-command-line-experience/))
 * Install [Ubuntu](https://www.microsoft.com/en-us/p/ubuntu/9pdxgncfsczv?activetab=pivot:overviewtab)
-    
+
 (If you find yourself getting stuck on the WSL2 install, [here](https://www.youtube.com/watch?v=VMZH9Pj2dXw&ab_channel=StefanRows) is a link to video instructions)
 
-Give it a test drive! 
+Give it a test drive!
 
 ![WindowsTerminal](https://user-images.githubusercontent.com/72572922/160048214-37f08855-8b29-4c13-9d25-e0f69806f752.jpg)
 
@@ -115,14 +114,14 @@ To get started, we need to download the MacOS package manager, <strong>Homebrew<
 
 2. Install Homebrew using the command below, following the command prompts:
 
-    `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` 
+    `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
 3. Update Homebrew (This may take a few minutes)
 
     `git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core fetch --unshallow`
 
     `git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask fetch`
-     
+
 4. Install the `wget` command to continue following along
      `brew install wget`
 
@@ -146,7 +145,7 @@ Enter the following commands in terminal to setup your environment. When prompte
 
   IntelliCode is an AI-powered code completion extension to boost coding productivity. :sunglasses:
 
-  1. Click the `Extensions` <img src="images/vscode_extensions_tab.png" width=30px/> tab in the navigation panel on the left side of VS Code. 
+  1. Click the `Extensions` <img src="images/vscode_extensions_tab.png" width=30px/> tab in the navigation panel on the left side of VS Code.
 
   2. Type "IntelliCode" in the search bar.
 
@@ -170,8 +169,8 @@ Enter the following commands in terminal to setup your environment. When prompte
 
   1. Open VS Code and click on `New File...`
 
-  2. Open the Command Pallette 
-    <strong>(Mac: </strong></ins> <kbd>Shift</kbd><kbd>⌘</kbd>+<kbd>P</kbd> 
+  2. Open the Command Pallette
+    <strong>(Mac: </strong></ins> <kbd>Shift</kbd><kbd>⌘</kbd>+<kbd>P</kbd>
     ,<strong> Windows: </strong></ins> <kbd>Ctrl</kbd>+<kbd>P</kbd>)
 
   3. Type "Python" in the search bar.
@@ -184,10 +183,10 @@ Enter the following commands in terminal to setup your environment. When prompte
 
   7. Click on `Python: Select Interpreter`
 
-  8. Select the `Conda` environment that you installed earlier. 
-  
+  8. Select the `Conda` environment that you installed earlier.
+
   <p align = "center" draggable=”false”>
-  <img src="images/vscode_mlops_interpreter.png"> 
+  <img src="images/vscode_mlops_interpreter.png">
   </p>
 
   9. Now you're ready to start coding!
@@ -203,39 +202,39 @@ If you don't already have one, make an account on [Github](https://github.com/)!
 <details>
   <summary>Github SSH Setup</summary>
   Secure Shell Protocol (SSH) provides a secure communication channel of an unsecured network.  Let's set it up!
-  
+
   <p></p>
 
   1. Generate a Private/Public SSH Key Pair.
-    
+
   ```console
   ssh-keygen -o -t rsa -C "your email address for github"
   ```
 
-  2. Save file pair.  Default location `~/.ssh/id_rsa` is fine! 
-  
+  2. Save file pair.  Default location `~/.ssh/id_rsa` is fine!
+
 
   3. At the prompt, type in a secure passphrase.
-  4. Copy the contents of the public key that we will share with GitHub. 
+  4. Copy the contents of the public key that we will share with GitHub.
 
-     * Mac: `pbcopy < ~/.ssh/id_rsa.pub` 
+     * Mac: `pbcopy < ~/.ssh/id_rsa.pub`
 
      * Windows (WSL): `clip.exe < ~/.ssh/id_rsa.pub`
 
      * Linux: `xclip -sel c < ~/.ssh/id_rsa.pub`
-  
-  5. Go to your GitHub account and go to `Settings`. 
-  
+
+  5. Go to your GitHub account and go to `Settings`.
+
   6. Under `Access`, click on the `SSH and GPG keys` tab on the left.
 
   ![Access Section](images/github_access_section.png)
 
   7. Click on the `New SSH Key` button.
-  
+
   ![New SSH Key](images/github_new_ssh_key.png)
-  
+
   8. Name the key, and paste the public key that you copied. Click the `Add SSH Key` button
-  
+
 
   ![Add SSH Key](images/github_add_ssh_key.png)
 
@@ -244,7 +243,7 @@ If you don't already have one, make an account on [Github](https://github.com/)!
 <details>
   <summary>Viewing the Repositories</summary>
 
-Login and click on the top right user icon, then go to `repositories`. 
+Login and click on the top right user icon, then go to `repositories`.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/37101144/162326947-3bfb4451-9854-41e8-9014-a02ed1322d66.png">
@@ -284,20 +283,20 @@ Then click `Create Repository`.
 
 <summary>Clone Your Repo</summary>
 
-  1. Open your terminal and navigate to a place where you would like to make a directory to hold all your files for this class using the command `cd`. 
+  1. Open your terminal and navigate to a place where you would like to make a directory to hold all your files for this class using the command `cd`.
 
 
   ```console
   cd {directory name}
   ```
-  
-  2. Once there, make a top level directory using `mkdir`. 
+
+  2. Once there, make a top level directory using `mkdir`.
 
   ```console
   mkdir {directory name}
   ```
 
-  3. `cd` into it and make another directory called `code`. 
+  3. `cd` into it and make another directory called `code`.
 
   ```console
   cd {directory name}
@@ -307,7 +306,7 @@ Then click `Create Repository`.
   mkdir code
   ```
 
-  4. `cd` into it and run your `git clone {your repo url}` command. 
+  4. `cd` into it and run your `git clone {your repo url}` command.
 
   ```console
   cd code
@@ -322,7 +321,7 @@ Then click `Create Repository`.
 <details>
   <summary>Adding The FourthBrain Whodunit? Content to Your Repo</summary>
 
-  1. Check your remote git. 
+  1. Check your remote git.
 
   ```console
   git remote -v
@@ -404,9 +403,9 @@ Then click `Create Repository`.
   ```console
   git checkout --track -b WDBranch WD/main
   ```
-  
+
   You should see something like this:
-  
+
   ```console
   Branch 'WDBranch' set up to track remote branch 'main' from 'WD'.
   ```
@@ -431,11 +430,11 @@ Then click `Create Repository`.
   ```console
   git add .
   ```
-  
+
   ```console
   git commit -m "message-here"
   ```
-  
+
   ```console
   git push origin main
   ```
@@ -452,7 +451,7 @@ Then click `Create Repository`.
   ```
 
   You will be asked to add a comment about why this change is necessary --> add a message.
-  
+
   ```console
   git push origin main
   ```
@@ -475,8 +474,8 @@ Then click `Create Repository`.
   <summary>Adding a Feature Branch</summary>
 
   Let's add a feature branch to our local repo.  Earlier, we showed you how to add a feature branch and content to your repo via the Terminal.  This time we are going to show you how to do it using the VS Code GUI.  
-  
-  1. Click on the `main` <img src="images/vscode_main_branch.png" width=30px/> branch in the lower left side of the screen 
+
+  1. Click on the `main` <img src="images/vscode_main_branch.png" width=30px/> branch in the lower left side of the screen
 
   2. You will then see a drop-down menu with some branch-level option commands.  Select the `Create a new branch` option.
 
@@ -490,13 +489,13 @@ Then click `Create Repository`.
   <summary>Hello World! - Part 1</summary>
   1. Next we will review some terminal commands and make some     additions to our repo.  Do these in your terminal where your     current working directory is your repo.
 
-  * Check your current working directory: `pwd` 
+  * Check your current working directory: `pwd`
 
   * Create a new file: `touch hello_world.py`
 
   * Create new directory: `mkdir app`
 
-  * Move file to directory: `mv hello_world.py app/hello_world.py` 
+  * Move file to directory: `mv hello_world.py app/hello_world.py`
 
   * Check that the move command worked: `cd app` and then `ls`, you
   should see your `hello_world.py` file
@@ -519,8 +518,8 @@ Then click `Create Repository`.
   <summary>Hello World! - Part 2 - Notebook Edition</summary>
 
   1. Create a new file under `app` by clicking on the `Add file` button <img src="images/vscode_add_file.png" width=30px/> and let's name this file `hello_world.ipynb`. The `.ipynb` extension is a notebook extension which will allow you to interact with your code via a notebook in  VS Code, instead of a vanilla Python file. You might need to select your kernel in the top right of the notebook file, if so, choose the one we created previously.
-  
-  2. In the first cell of `hello_world.ipynb` lets do our imports. 
+
+  2. In the first cell of `hello_world.ipynb` lets do our imports.
 
       ```
       import pandas as pd
@@ -528,7 +527,7 @@ Then click `Create Repository`.
       import matplotlib.pyplot as plt
       ```
 
-  3. Run the cell by either clicking the play button or by doing `CTRL + ENTER`. 
+  3. Run the cell by either clicking the play button or by doing `CTRL + ENTER`.
 
   4. Create a new cell and in that put the following code:
       ```
@@ -539,34 +538,34 @@ Then click `Create Repository`.
       s.plot(kind='hist', title='Normally distributed random values') # hist computes distribution
       plt.show()   
       ```
-      
-  5. Run the cell and you should see your histogram plot! Well done. 
+
+  5. Run the cell and you should see your histogram plot! Well done.
 
   ![coding histogram](images/coding_histogram.jpeg)
 
   6. Now let's commit our code to our remote repository. This can be done one of two ways - either through the terminal or through VS Code's GUI. I'll explain both ways and you can choose which you'll use.
-    
+
   * Click `Source Control` <img src="images/vscode_source_control_tab.png" width=30px/>  on the left icon bar.
 
-  * Add a message to your commit by typing in the message field. 
+  * Add a message to your commit by typing in the message field.
 
   * Click the check mark <img src="images/vscode_commit_check_mark.png" width=30px/> button under changes to add your files to this commit.  If you haven't saved your changes, you will be prompted to `Save All and Commit`.  Click `Save All and Commit`.
 
   * Click the elipsis in `Source Control` <img src="images/vscode_ellipsis.png" width=30px/> ribbon and click `Push`.  You may also be prompted to `Sync Changes`.  This will do Pull and Push, which will fetch new changes to the code and push your updates as well.
 
   * You can then put in a pull request in GitHub <img src="images/github_pull_request.png" width=100px/>  to merge into the branch that you pulled from, in this case the main branch.  In real life, you would then review the code changes with another developer/team lead/supervisor and address any potential code conflicts.  
-  
-  <p align = "center" draggable=”false” ><img src="images/github_pull_request_compare.png" 
+
+  <p align = "center" draggable=”false” ><img src="images/github_pull_request_compare.png"
       width="500px"
       height="auto"/>
   </p>
-  
+
 </details>
 
 
 <p></p>
 
-# :detective: Whodunit? 
+# :detective: Whodunit?
 Now let's practice  what you have learned by playing the [Whodunit?](https://github.com/FourthBrain/whodunit) game!
 
 ### That's it for now!  And so it begins.... :)
