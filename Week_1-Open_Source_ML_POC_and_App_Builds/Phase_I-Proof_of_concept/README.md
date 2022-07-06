@@ -31,7 +31,7 @@ At the end of this session, you will have a brief understanding of how to:
    Follow this tutorial to generate your own Reddit credentials:
    <https://www.jcchouinard.com/get-reddit-api-credentials-with-praw/>
 
-4. Continue in `proof_of_concepts.ipynb`
+4. Continue in `proof_of_concept.ipynb`
 
 ## Background
 Please review the weekly narrative [here](https://www.notion.so/Analyzing-Market-Sentiment-Phase-I-II-and-II-End-to-End-MLOps-with-Open-Source-Tools-dc4b846108b44f6bb2962d550368560c#54cc350bc95041ee873dabde36930af1)
